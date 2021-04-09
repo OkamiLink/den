@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --gradient: linear-gradient(
+        120deg, 
+        rgba(153,239,214,1) 0%, 
+        #8fd3f4 100%
+    );
+
+    --nightraze: linear-gradient(
+        45deg, 
+        rgba(19,20,25,1) 0%, 
+        rgba(26,25,46,1) 100%
+    );
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: #d6dee9;
+    height: 100%;
+    padding: 50px;
+    margin: 0px;
+    color: white;
+}
+
+span {
+    position: absolute;
+    background: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: anime 1s linear infinite;
+}
+
+/*-- Classes --*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: 70% auto 10%;
+
+    grid-template-areas: 
+        "h c"
+        "h ."
+        "f ."
+    ;
+
+    background: var(--nightraze);
+    background-size: 300%;
+    animation: bg-animation 20s infinite alternate;
+    border-radius: 75px;
+    height: 100%;
+}
+
+.header {
+    grid-area: h;
+}
+
+.content {
+    grid-area: c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    font-family: 'Roboto', 'Helvetica Neue';
+}
+
+.footer {
+    grid-area: f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.floaters {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 170px;
+    margin-top: -305px;
+    padding-bottom: 50px;
+}
+
+/*-- IDs --*/
+
+#lobo {
+    height: 400px;
+}
+
+#title {
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: 'Dela Gothic One';
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 0.8;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 300%;
+    color: transparent;
+    animation: bg-animation 5s infinite alternate;
+}
+
+#header {
+    margin: 0;
+    padding-bottom: 50px;
+    font-family: 'Dela Gothic One';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 0.8;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 300%;
+    color: transparent;
+    animation: bg-animation 5s infinite alternate;
+}
+
+#subtitle{
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: 'Roboto';
+}
+
+#okami_logo{
+    height: 20px;
+    margin: -3px;
+    padding-right: 5px;
+}
+
+/*-- Key Frames --*/
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+@keyframes animate {
+    0% {width: 0px; height: 0px; opacity: 0.5;}
+    100% {width: 500px; height: 500px; opacity: 0;}
+}

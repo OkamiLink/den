@@ -1,17 +1,70 @@
-<html>
-	<head>
-		<!-- Title on the Tab -->
-		<title>The Den</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Label on the Browser Tab -->
+        <title>Overview</title>
 
-		<!-- Link the CSS file -->
-        <link rel="stylesheet" href="src/styles.css">
+        <!-- Add the Icons & CSS in the page -->
+        <link rel="icon" href="global_src/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
 
-		<!-- Add the Icon in the page -->
-        <link rel="icon" href="src/favicon.ico" type="image/x-icon">
-	</head>
-	<body>
-		<h1>THE DEN</h1>
+        <!-- Add JS -->
+        
+    </head>
+    <body>
 
+        <div class="container">
+            <div class="header">
+                <h1 id="title">OKAMI<br>LINK</h1>
 
-	</body>
+                <p id="subtitle">
+                    Okami Link© is a new social media application for all gamers out there.<br>
+                    Here you can share your current games and current progress to other players.<br>
+                    <br>
+                    This is the new communication in the Philippines.<br>
+                    <br>
+                    Choose the one that let you belong. <br>
+                    Kasama ka namin, Okami Link!
+                </p>
+            </div>
+
+            <div class="content">
+                <h2 id="header">OVERVIEW</h2>
+                <a href="okami_frontpage/of_index.html">HOME PAGE</a>
+                <a href="my_den/md_index.html">MY DEN</a>
+                <a href="okami_link/ol_index.html">TIMELINE</a>
+
+                <script type="text/javascript">
+                    const buttons = document.querySelectorAll('a');
+        
+                    buttons.forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+        
+                            let x = e.clientX - e.target.offsetLeft;
+                            let y = e.clientY - e.target.offsetTop;
+        
+                            let ripples = document.createElement('span');
+                            ripples.style.left = x + 'px';
+                            ripples.style.top = y + 'px';
+                            this.appendChild(ripples);
+        
+                            setTimeout(() => {
+                                ripples.remove()
+                            }, 1000);
+                        })
+                    })
+                </script>
+            </div>
+
+            <div class="footer">
+                <img id="okami_logo" src="global_src/Okami Link.png" height="50px">
+                ​ Copyright © 2021 Okami Inc. All rights reserved.
+            </div>
+        </div>
+        <div class="floaters">
+            <img id="lobo" src="global_src/lobo.png">
+        </div>
+
+        
+    </body>
 </html>
