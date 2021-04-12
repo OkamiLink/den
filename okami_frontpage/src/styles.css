@@ -1,4 +1,30 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+:root {
+    --gradient: linear-gradient(
+        120deg, 
+        rgba(153,239,214,1) 0%, 
+        #8fd3f4 100%
+    );
 
+    --nightraze: linear-gradient(
+        45deg, 
+        rgba(19,20,25,1) 0%, 
+        rgba(26,25,46,1) 100%
+    );
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: #d6dee9;
+    height: 100%;
+    padding: 50px;
+    margin: 0px;
+    color: white;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
