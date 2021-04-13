@@ -1,32 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <!-- Basic Stuff-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <meta http-equiv="X-UA-Compatible" content="">
+
+        <!-- Title in the Tab -->
         <title>Welcome Wolves!</title>
 
-        <!-- Link the CSS file -->
-        <link rel="stylesheet" href="src/styles.css">
-
-        <!-- Add the Icon in the page -->
+        <!-- Link the CSS file and Icon for the Tab -->
+        <link rel="stylesheet" href="src/style.css">
         <link rel="icon" href="../global_src/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
-        <img src="../global_src/Okami Link.png" height="30%">
-
-        <nav>
-            <ul>
-                <li>Login</li>
-                <li>Register</li>
-            </ul>
-        </nav>
+        <header class="navbar">
+            
         </header>
-        <div class="section1">
 
-        </div>
-        <div class="section2">
+        <main>
+            <!-- PINAKA INTRO -->
+            <section class="intro">
+                <h1 class="primary-title">The #1 Community for Gamers Around the World!</h1>
+                <p class="primary-subtitle">Thousands of players from around the world gather around to share their experience and insights about the games you play.
+                    <br>Join the Pack. Howl like everyone. Okami Link! 
+                </p>
+                <a href="#" class="btn">Join the Pack</a>
+                <img id="primary-img" src="src/1.png">
+            </section>
 
-        </div>
-        <div class="footer">
+            <!-- FOUNDERS SECTION -->
+            <section class="founders">
 
-        </div>
+                <h2 class="founder-title">Meet the Founders!</h2>
+                <div class="truefounders">
+                    <div id="jericho">
+                        <img src="src/founders/jericho.jpg" alt="Jericho" class="founder-img">
+                        <p class="founder-deets">Jericho Chan</p>
+                    </div>
+                    <div id="james">
+                        <img src="src/founders/james.jpg" alt="James" class="founder-img">
+                        <p class="founder-deets">James Lemsic</p>
+                    </div>
+                    <div id="cyril">        
+                        <img src="src/founders/cyril.jpg" alt="Cyril" class="founder-img">
+                        <p class="founder-deets">Ethan Cyril De Guzman</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURED GAMES SECTION -->
+            <section class="games">
+                <div class="container">
+                    <h2 class="section-text">Everyone is howling about their game!</h2>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
     </body>
 </html>

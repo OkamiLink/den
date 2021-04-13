@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* RESET EVERYTHING FIRST - BASIC STUFF*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Roboto', 'Helvetica Neue';
+    text-transform: uppercase;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, var(--gradient));
+
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+    border-radius: 40px;
+    font-family: 'Dela Gothic One';
+    font-size: 1.125rem;
+    transition: transform 250ms ease-in-out, 
+                opacity 250ms linear;
+    margin-top: var(--space, 2rem);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+/* NOW WE START CSS */
+:root {
+    --gradient: linear-gradient(
+        120deg, 
+        rgba(153,239,214,1) 0%, 
+        #8fd3f4 100%
+    );
+
+    --nightraze: linear-gradient(
+        45deg, 
+        rgba(19,20,25,1) 0%, 
+        rgba(26,25,46,1) 100%
+    );
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+/* -- CLASSES -- */
+
+.primary-title {
+    z-index: 2;
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 4rem);
+    line-height: 1.0;
+    font-family: 'Dela Gothic One';
+}
+
+.primary-subtitle {
+    margin-top: var(--space, 2rem);
+    line-height: 1.2;
+}
+
+.navbar {
+
+}
+
+main {
+    
+}
+
+.intro {
+    position: relative;
+    text-align: center;
+    padding: 15em 0;
+    animation: bg-animation 5s infinite alternate;
+    overflow-y: hidden;
+    z-index: 2;
+    background: var(--nightraze);
+}
+
+.founders {
+    background: var(--gradient);
+    animation: bg-animation 5s infinite alternate;
+    text-align: center;
+}
+
+.founder-title {
+    padding-top: 40px;
+    font-size: 3rem;
+    margin-bottom: -100px;
+    color: black;
+    font-family: 'Roboto';
+}
+
+.truefounders {
+    display: flex;
+}
+
+.truefounders p {
+    margin-top: 40px;
+}
+
+.founder-deets {
+    color: black;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.games {
+    background: var(--nightraze);
+    animation: bg-animation 5s infinite alternate;
+}
+
+.section-text {
+    text-transform: uppercase;
+    font-family: 'Dela Gothic One';
+}
+
+.founder-img {
+    border-radius: 50%;
+    height: 50%;
+}
+
+/* -- IDs -- */
+
+#primary-img {
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#jericho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+}
+
+#james {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+}
+
+#cyril {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+}
