@@ -30,30 +30,11 @@
 
             <div class="content">
                 <h2 id="header">OVERVIEW</h2>
-                <a href="okami_frontpage/of_index.html">HOME PAGE</a>
+                <a>HOME PAGE</a>
                 <a href="my_den/md_index.html">MY DEN</a>
                 <a href="okami_link/ol_index.html">TIMELINE</a>
 
-                <script type="text/javascript">
-                    const buttons = document.querySelectorAll('a');
-        
-                    buttons.forEach(btn => {
-                        btn.addEventListener('click', function(e) {
-        
-                            let x = e.clientX - e.target.offsetLeft;
-                            let y = e.clientY - e.target.offsetTop;
-        
-                            let ripples = document.createElement('span');
-                            ripples.style.left = x + 'px';
-                            ripples.style.top = y + 'px';
-                            this.appendChild(ripples);
-        
-                            setTimeout(() => {
-                                ripples.remove()
-                            }, 1000);
-                        })
-                    })
-                </script>
+                <script src="script.js"></script>
             </div>
 
             <div class="footer">
@@ -64,7 +45,5 @@
         <div class="floaters">
             <img id="lobo" src="global_src/Lobo.png">
         </div>
-
-        <!--JAMES WAS HERE!-->
     </body>
 </html>
