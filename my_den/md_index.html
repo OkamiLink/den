@@ -1,15 +1,236 @@
 <html>
     <head>
         <title>My Den</title>
-
-        <!-- Link the CSS file -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="src/styles.css">
-
-        <!-- Add the Icon in the page -->
         <link rel="icon" href="../global_src/favicon.ico" type="image/x-icon">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>My Den</h1>
-        <p>5 stars please</p>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">OkamiLink</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../okami_frontpage/of_index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+        <div class="container">
+        <div class="page-inner no-page-title">
+            <div id="main-wrapper">
+                <div class="row">
+
+                    <div class="col-lg-5 col-xl-3">
+                        <div class="card card-white grid-margin">
+                            <div class="card-heading clearfix">
+                                <h4 class="card-title">My Den</h4>
+                            </div>
+                            <div class="card-body user-profile-card mb-3">
+                                <img src="../global_src/Lobo.png" class="user-profile-image rounded-circle" alt="" />
+                                <h4 class="text-center h6 mt-2">Olive Okami</h4>
+                                <p class="text-center small">Bio has not been set</p>
+                                <button class="btn btn-theme btn-sm">Follow</button>
+                                <button class="btn btn-theme btn-sm">Message</button>
+                            </div>
+                            <hr />
+                            <div class="card-heading clearfix mt-3">
+                                <h4 class="card-title">About</h4>
+                            </div>
+                            <div class="card-body mb-3">
+                                <p class="mb-0">
+                                    I was a player for NRG Esports for 3 years before coaching vtubers for their tournaments in Apex Legends.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="card-heading clearfix mt-3">
+                                <h4 class="card-title">Games</h4>
+                            </div>
+                            <div class="card-body mb-3">
+                                <a href="#" class="label label-success mb-2">LoL</a>
+                                <a href="#" class="label label-success mb-2">MLBB</a>
+                                <a href="#" class="label label-success mb-2">CS:GO</a>
+                                <a href="#" class="label label-success mb-2">Valorant</a>
+                                <a href="#" class="label label-success mb-2">APEX</a>
+                                <a href="#" class="label label-success mb-2">Minecraft</a>
+                                <a href="#" class="label label-success mb-2">Flappy Bird</a>
+                                <a href="#" class="label label-success mb-2">Ark</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="card card-white grid-margin">
+                            <div class="card-body">
+                                <div class="post">
+                                    <textarea class="form-control" placeholder="Howl" rows="4"></textarea>
+                                    <div class="post-options">
+                                        <a href="#"><i class="fa fa-camera"></i></a>
+                                        <a href="#"><i class="fas fa-video"></i></a>
+                                        <a href="#"><i class="fa fa-music"></i></a>
+                                        <button class="btn btn-outline-primary float-right">Howl</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-timeline">
+                            <ul class="list-unstyled">
+                                <li class="timeline-item">
+                                    <div class="card card-white grid-margin">
+                                        <div class="card-body">
+                                            <div class="timeline-item-header">
+                                                <img src="../global_src/Lobo.png" alt="" />
+                                                <p>Olive Okami <span>howled</span></p>
+                                                <small>3 hours ago</small>
+                                            </div>
+                                            <div class="timeline-item-post">
+                                                <p>
+                                                    ChroNoir upping their game by using tier 1 compositions like Gibby, Bloodhound, and Horizon.
+                                                </p>
+                                                <div class="timeline-options">
+                                                    <a href="#"><i class="fa fa-thumbs-up"></i> Like (15)</a>
+                                                    <a href="#"><i class="fa fa-comment"></i> Comment (4)</a>
+                                                    <a href="#"><i class="fa fa-share"></i> Share (6)</a>
+                                                </div>
+                                                <div class="timeline-comment">
+                                                    <div class="timeline-comment-header">
+                                                        <img src="../global_src/Lobo.png" alt="" />
+                                                        <p>Levi Simp <small>1 hour ago</small></p>
+                                                    </div>
+                                                    <p class="timeline-comment-text">
+                                                        yea tbh Kuzuha's gibby improved during the custom matches.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-comment">
+                                                    <div class="timeline-comment-header">
+                                                        <img src="../global_src/Lobo.png" alt="" />
+                                                        <p>Eren's abs simp <small>3 hours ago</small></p>
+                                                    </div>
+                                                    <p class="timeline-comment-text">
+                                                        Ah! they sometimes use Gibby, Wraith, and Horizon though? Is this composition also considered tier 1?
+                                                    </p>
+                                                </div>
+                                                <textarea class="form-control" placeholder="Echo"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="card card-white grid-margin">
+                                        <div class="card-body">
+                                            <div class="timeline-item-header">
+                                                <img src="../global_src/Lobo.png" alt="" />
+                                                <p>Olive Okami <span>uploaded a photo</span></p>
+                                                <small>7 hours ago</small>
+                                            </div>
+                                            <div class="timeline-item-post">
+                                                <p>dia lobby win :></p>
+                                                <img src="src/winHowl.jpg" alt="" />
+                                                <div class="timeline-options">
+                                                    <a href="#"><i class="fa fa-thumbs-up"></i> Like (22)</a>
+                                                    <a href="#"><i class="fa fa-comment"></i> Comment (7)</a>
+                                                    <a href="#"><i class="fa fa-share"></i> Share (9)</a>
+                                                </div>
+                                                <div class="timeline-comment">
+                                                    <div class="timeline-comment-header">
+                                                        <img src="../global_src/Lobo.png" alt="" />
+                                                        <p>Johnny Heard <small>1 hour ago</small></p>
+                                                    </div>
+                                                    <p class="timeline-comment-text">basic for you huh?</p>
+                                                </div>
+                                                <textarea class="form-control" placeholder="Echo"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="card card-white grid-margin">
+                                        <div class="card-body">
+                                            <div class="timeline-item-header">
+                                                <img src="../global_src/Lobo.png" alt="" />
+                                                <p>Olive Okami <span>howled</span></p>
+                                                <small>10 hours ago</small>
+                                            </div>
+                                            <div class="timeline-item-post">
+                                                <p>
+                                                    Tournament is in 10 days and I'm still working on the team's camaraderie. T_T
+                                                </p>
+                                                <div class="timeline-options">
+                                                    <a href="#"><i class="fa fa-thumbs-up"></i> Like (2)</a>
+                                                    <a href="#"><i class="fa fa-comment"></i> Comment (1)</a>
+                                                    <a href="#"><i class="fa fa-share"></i> Share (2)</a>
+                                                </div>
+                                                <div class="timeline-comment">
+                                                    <div class="timeline-comment-header">
+                                                        <img src="../global_src/Lobo.png" alt="" />
+                                                        <p>Mikasa Ackerman <small>1 hour ago</small></p>
+                                                    </div>
+                                                    <p class="timeline-comment-text">
+                                                        It'll be solved in due time! gogogogo!
+                                                    </p>
+                                                </div>
+                                                <textarea class="form-control" placeholder="Echo"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-3">
+                        <div class="card card-white grid-margin">
+                            <div class="card-heading clearfix">
+                                <h4 class="card-title">Other Okami Suggestions</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="team">
+                                    <div class="team-member">
+                                        <div class="online on"></div>
+                                        <img src="../global_src/Lobo.png" alt="" />
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="online on"></div>
+                                        <img src="../global_src/Lobo.png" alt="" />
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="online off"></div>
+                                        <img src="../global_src/Lobo.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-white grid-margin">
+                            <div class="card-heading clearfix">
+                                <h4 class="card-title">Advertisement</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Google Ad Sense offline
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
     </body>
 </html>
